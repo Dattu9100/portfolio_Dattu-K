@@ -1,0 +1,187 @@
+/* === Custom SVG Cursor === */
+
+/* Default cursor */
+* {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='white' stroke='black' stroke-width='2' d='M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z'/></svg>") 0 0, auto;
+}
+
+/* Hover cursor for links and interactive elements */
+a:hover,
+#btn_submit,
+button:hover,
+.btn:hover,
+.nav-link:hover,
+input,
+textarea {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='%23ffc107' stroke='black' stroke-width='2' stroke-linejoin='round' d='M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z'/></svg>") 0 0, pointer;
+}
+
+/* Body + rest of your styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand span {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Hero */
+header {
+    background: linear-gradient(135deg, #111 0%, #1e1e1e 100%);
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#typewriter {
+    color: #ffc107;
+}
+
+/* About */
+#about {
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+    color: #fff;
+    position: relative;
+    padding: 80px 0;
+}
+
+#about h2 {
+    color: #ffc107;
+}
+
+#about p {
+    color: #e0e0e0;
+}
+
+#about img {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+    width: 100%;
+    height: 500px;
+}
+
+/* Skills */
+#skills .card {
+    background: #1b1b1b;
+    color: #fff;
+    border: none;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+#skills .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+/* Projects */
+#projects {
+    background: linear-gradient(135deg, #111 0%, #222 100%);
+    color: #fff;
+    position: relative;
+    padding: 80px 0;
+}
+
+#projects h2 {
+    color: #ffc107;
+}
+
+#projects .card {
+    background: #1b1b1b;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.4s;
+}
+
+#projects .card:hover {
+    transform: scale(1.03);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.4s;
+}
+
+.card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Contact */
+#contact {
+    background: linear-gradient(180deg, #111, #1b1b1b);
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 20px;
+    color: #999;
+    text-align: center;
+}
+
+/* Scroll Up */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 15px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+#scrollTopBtn:hover {
+    background-color: #fff;
+}
+
+#Prog1,
+#Prog2,
+#Prog3 {
+    width: 400px;
+    height: 400px;
+}
